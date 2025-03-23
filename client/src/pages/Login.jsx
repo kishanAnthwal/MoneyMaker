@@ -12,7 +12,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post('backend-drab-six-62.vercel.app/api/auth/login', formData);
+      const res = await axios.post('https://backend-drab-six-62.vercel.app/api/auth/login', formData);
       localStorage.setItem('token', res.data.token); 
       alert('Login successful');
       navigate('/batting'); 
