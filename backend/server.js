@@ -26,9 +26,7 @@ app.use((err, req, res, next) => {
 const path = require("path");
 app.use(express.static(path.join(__dirname, "client", "dist")));
 
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
-});
+
 
 
 app.use('/api/auth', require('./routes/auth'));
@@ -39,7 +37,9 @@ app.use('/api/clicked-data', require('./routes/clickedData'));
 app.get("/", (req, res) => {
     res.send("Welcome to the IPL 2025 Market API!");
 });
-
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+});
 
 const PORT =6000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
