@@ -7,7 +7,7 @@ export const BattingTable = () => {
 
   const saveDataToBackend = async (row) => {
     try {
-      const response = await fetch('backend-drab-six-62.vercel.app/api/clicked-data/save', {
+      const response = await fetch('https://backend-drab-six-62.vercel.app/api/clicked-data/save', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
