@@ -1,0 +1,68 @@
+.post_card{
+    height: 500px;
+    width: 350px;
+    background-color: #fff;
+    margin: 0 12px;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    color: #000;
+}
+
+.post_card>.img{
+height: 50%;
+width: 100%;
+
+}
+.post_card>.img>img{
+width: 100%;
+height: 100%;
+}
+.detail,.post_footer{
+    padding: 6px;
+}
+.detail>.post_title h4{
+font-size: 1.6rem;
+color: #000;
+}
+.posted_on >p{
+    font-weight: 500;
+    font-style: italic;
+}
+.post_deception p{
+    font-size: 1.2rem;
+    color: #000;
+}
+.post_footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+    padding:10px 6px;
+    background-color: #EBCF74;
+    justify-content: space-between !important;
+}
+
+.read_more{
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #000 !important;
+}
+.read_more >svg{
+    margin: 0 3px;
+}
+.read_more p>svg{
+    color: #000 !important;
+}
+.read_more p{
+    font-weight: 600;
+    color: #000 !important;
+}
+.icons>svg{
+    margin: 0 6px;
+    color: #000 !important;
+}
+.f_left >svg{
+    color: #000 !important;
+}

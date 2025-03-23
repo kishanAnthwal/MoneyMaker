@@ -1,0 +1,28 @@
+.page_content {
+  font-size: 16px;
+}
+.page_header h2 {
+  font-size: 38px;
+}
+.page_title h4 {
+  margin: 12px 0;
+  color: #ebcf74;
+  font-size: 21px;
+}
+.page_content > p {
+  text-align: justify;
+  font-size: 1.2rem;
+}
+.page_content > ul > li {
+  margin: 6px 0;
+  font-size: 1.2rem;
+  text-align: justify;
+}
+.page_content > ul > li > span {
+  color: #ebcf74;
+}
+
+
+.hero_btn_container ul li {
+  margin: 36px 12px;
+}

@@ -1,0 +1,28 @@
+.cricket_hero{
+    width: 45%;
+}
+.cricket_hero h2{
+    font-size: 1.6rem;
+    color: #EBCF74;
+}
+.cricket_hero p{
+    font-size: 1.3rem;
+}
+.cricket_poster>img{
+border-radius: 16px;
+}
+
+.cricket_body h2{
+    font-size: 1.6rem;
+    color: #EBCF74; 
+}
+
+@media only screen and (max-width:425px){
+ .cricket_hero {
+    width: 100% !important;
+    
+}
+.cricket_poster>img{
+   width: 90%;
+    }
+}

@@ -1,0 +1,58 @@
+.table_container {
+    padding: 20px;
+    overflow-x: auto;
+  }
+  
+  .wp-market-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+  }
+  
+  .wp-market-table th,
+  .wp-market-table td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+  }
+  
+  .wp-market-table th {
+    font-weight: bold;
+  }
+  
+  .wp-market-table .cell {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .wp-market-table .main {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #ff0000;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .wp-market-table .sub {
+    font-size: 14px;
+    background-color: #ff0000;
+    width: 100%;
+    color: #fff;
+  }
+  
+  .main.updated {
+    background-color: #4caf50;
+  }
+  
+ 
+  .disabled-row {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+ 
+  .cell.disabled {
+    cursor: not-allowed;
+  }
+  
