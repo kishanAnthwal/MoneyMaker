@@ -1,0 +1,37 @@
+.platform{
+    height: 78vh;
+}
+.register{
+    background-color: #EBCF74;
+    width: 400px;
+    padding: 12px;
+    border-radius: 12px;
+ 
+}
+.register>h2{
+    margin: 12px 0;
+    text-align: center;
+    color: #020124;
+}
+.register>form>input{
+    width: 100%;
+    margin: 12px 0;
+    height: 40px;
+    padding: 6px;
+    color: #000;
+    outline: none;
+}
+.register>p>a{
+    color: #000;
+    text-decoration: underline;
+    color: #020124;
+}
+.user a{
+    color: #000;
+    text-decoration: underline !important;
+}
+@media only screen and (max-width: 394px){
+.register{
+    width: 300px;
+}
+}

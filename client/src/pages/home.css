@@ -1,0 +1,53 @@
+
+.member>.title>h3{
+    width: 70%;
+    text-align: center;
+    
+}
+ol.become_member{
+    list-style-type: decimal-leading-zero !important;
+    width: 40%;
+    margin: auto;
+    text-align: justify;
+    font-size: 1.2rem;
+}
+.member p{
+    text-align: center;
+    font-size: 1.2rem;
+}
+.become_member li{
+    margin: 12px 0;
+    position: relative;
+}
+.become_member li::before{
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 5px;
+    border: 1px solid #fff;
+    left: -5%;
+    top: 20%;
+}
+.notice{
+    margin: 29px 0;
+}
+.faqs{
+    width: 60%;
+    margin: auto;
+}
+@media only screen and (max-width: 768px){
+    .blog_card_container{
+justify-content: center;
+    }
+    .member>.title>h3{
+        width: 90%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 525px){
+    ol.become_member{
+        list-style-type: decimal-leading-zero !important;
+        width: 90%;
+        margin: auto;
+    }
+}

@@ -1,0 +1,115 @@
+.score_board {
+    height: 400px;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+}
+
+.score_board > img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.score_board::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    height: 100%;
+    z-index: 1;
+}
+.live_icon svg {
+    color: red !important; /* Ensure red color is applied */
+    font-size: 1.5rem; /* Adjust size if needed */
+}
+
+.live_score>.live_icon svg {
+    color: red !important;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the text */
+    color: #fff;
+    text-align: center;
+    z-index: 2;
+}
+
+.overlay h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 1.2rem;
+}
+
+.live_score{
+    width: 300px;
+    border: 2px solid #fff;
+    margin: 0 12px;
+}
+.live_score h3{
+ font-size: 1.9rem;
+}
+.score{
+    font-size: 1.5rem;
+    margin:12px 0;
+}
+.team_1>p,.team_2>p{
+    margin: 6px 0;
+}
+
+
+.match_table {
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+  }
+  
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  th, td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+ 
+  
+
+  
+@media only screen and (max-width: 768px){
+    .score_board {
+        width: 90%;
+        
+    }
+    .overlay{
+        justify-content: center;
+    }
+    .overlay {
+        width: 80%;
+    }
+    .team_1,.team_2{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+}

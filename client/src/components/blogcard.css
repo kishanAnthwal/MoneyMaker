@@ -1,0 +1,20 @@
+.card{
+    width: 319px;
+    background-color: #EBCF74;
+    padding: 6px;
+}
+.card_img{
+    height: 180px;
+    width: 100%;
+}
+.card_img>img{
+    height: 100%;
+    width: 100%;
+}
+.card_header{
+    margin: 12px 0;
+}
+.card_header a{
+color: #000;
+font-weight: 800;
+}
