@@ -40,7 +40,7 @@ const Platform = () => {
     e.preventDefault();
     if (formData.username && formData.email && formData.password) {
       try {
-        const res = await axios.post("backend-nine-theta-14.vercel.app/api/auth/register", formData);
+        const res = await axios.post("backend-drab-six-62.vercel.app/api/auth/register", formData);
         alert(res.data.message || "Registration successful"); // ✅ Use the response message
         navigate("/login");
       } catch (err) {
