@@ -35,7 +35,7 @@ app.use('/api/clicked-data', require('./routes/clickedData'));
 
 
 app.get("/", (req, res) => {
-    res.send("Welcome to the IPL 2025 Market API!");
+    res.send("Welcome to the IPL API!");
 });
 app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
