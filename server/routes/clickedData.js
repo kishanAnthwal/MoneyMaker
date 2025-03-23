@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const ClickedData = require('../models/ClickedData');
+const ClickedData = require('../models/ClickedData.js');
 
 // Save clicked data
 router.post('/save', async (req, res) => {
