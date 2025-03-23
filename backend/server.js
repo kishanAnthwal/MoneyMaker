@@ -11,7 +11,7 @@ app.use(express.json());
 
 app.use(cors(
     {
-        origin:[""],
+        origin:["https://frontend-nu-flame-31.vercel.app"],
         methods:["POST","GET"],
         credentials:true
     }
