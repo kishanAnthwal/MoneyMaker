@@ -9,13 +9,16 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors(
-    {
-        origin:["https://frontend-nu-flame-31.vercel.app"],
-        methods:["POST","GET"],
-        credentials:true
-    }
-));
+app.use(cors());
+app.use(express.json());
+
+// app.use(cors(
+ //   {
+    //    origin:["https://frontend-nu-flame-31.vercel.app"],
+     //   methods:["POST","GET"],
+      //  credentials:true
+   // }
+//));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
