@@ -19,8 +19,8 @@ const Platform = () => {
     e.preventDefault();
 
     // ✅ Set your desired credentials here
-    const correctUsername = "admin";
-    const correctPassword = "12345";
+    const correctUsername = "kishan";
+    const correctPassword = "urbantrad44@";
 
     if (auth.username === correctUsername && auth.password === correctPassword) {
       alert("Authentication successful");
