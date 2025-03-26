@@ -19,8 +19,8 @@ const Platform = () => {
     e.preventDefault();
 
     // ✅ Set your desired credentials here
-    const correctUsername = "kishan";
-    const correctPassword = "urbantrad44@";
+    const correctUsername = "admin";
+    const correctPassword = "12345";
 
     if (auth.username === correctUsername && auth.password === correctPassword) {
       alert("Authentication successful");
@@ -56,7 +56,7 @@ const Platform = () => {
       {!isAuthenticated ? (
         // ✅ Pre-Authentication Form
         <div className="register">
-          <h2>Admin Authentication</h2>
+          <h2>Authenticate First</h2>
           <form onSubmit={handleAuthSubmit}>
             <input
               type="text"
@@ -76,14 +76,10 @@ const Platform = () => {
             />
             <input type="submit" value="Authenticate" />
           </form>
-          <div className="user">
-            <Link to="/login">User Login</Link>
-          </div>
         </div>
       ) : (
         // ✅ Registration Form (Only shown after authentication)
         <div className="register">
-          <h2>Registration</h2>
           <form onSubmit={handleSubmit}>
             <input
               type="text"
@@ -114,7 +110,6 @@ const Platform = () => {
           <p>
             <Link to="/login">I have an account</Link>
           </p>
-
         </div>
       )}
     </div>
