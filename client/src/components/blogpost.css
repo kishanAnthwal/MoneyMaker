@@ -40,29 +40,23 @@ color: #000;
     border-bottom-right-radius: 6px;
     border-bottom-left-radius: 6px;
     padding:10px 6px;
-    background-color: #EBCF74;
+    background-color: #000;
     justify-content: space-between !important;
 }
 
 .read_more{
     padding: 6px 12px;
     border-radius: 6px;
-    color: #000 !important;
 }
 .read_more >svg{
     margin: 0 3px;
 }
-.read_more p>svg{
-    color: #000 !important;
-}
+
 .read_more p{
     font-weight: 600;
-    color: #000 !important;
+    
 }
 .icons>svg{
     margin: 0 6px;
-    color: #000 !important;
-}
-.f_left >svg{
-    color: #000 !important;
+    
 }
