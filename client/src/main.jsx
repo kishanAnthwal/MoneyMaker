@@ -47,19 +47,14 @@ const router = createBrowserRouter([
         path: '/articles/:id',
         element: <Articles />
       },
-       // {
-      //   path:"/batting",
-      //   element: (
-      //     <ProtectedRoute>
-      //       <Batting />
-      //     </ProtectedRoute>
-      //   ),
-      // },
-      {
+       {
         path:"/batting",
-        element:<Batting />
+        element: (
+          <ProtectedRoute>
+            <Batting />
+          </ProtectedRoute>
+        ),
       },
-      ,
       {
         path:"/login",
         element:<Login/>
