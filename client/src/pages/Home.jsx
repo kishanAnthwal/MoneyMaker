@@ -12,7 +12,12 @@ const Home = () => {
         "Delhi Capitals vs Mumbai Indians, WPLT20 Final 2025: ",
       card_link: "",
     },
-  
+    {
+      img: "img_02.jpg",
+      header:
+        "Delhi Capitals vs Mumbai Indians, WPLT20 Final 2025: ",
+      card_link: "",
+    }
   ];
   let quesAns = [{
     ques: "What happens if I forget my password?",
