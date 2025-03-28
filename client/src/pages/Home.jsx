@@ -15,7 +15,7 @@ const Home = () => {
     {
       img: "img_02.jpg",
       header:
-        "Delhi Capitals vs Mumbai Indians, WPLT20 Final 2025: ",
+        "Live - CSK vs RCB in Friday-night blockbuster",
       card_link: "",
     }
   ];
