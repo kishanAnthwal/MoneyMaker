@@ -11,11 +11,11 @@ app.use(express.json());
 
 
 app.use(cors(
-   {
-       origin:["https://www.moneymakerx24.com"],
-       methods:["POST","GET"],
-       credentials:true
-   }
+   // {
+   //     origin:["https://www.moneymakerx24.com"],
+   //     methods:["POST","GET"],
+   //     credentials:true
+   // }
 ));
 
 // Error handling middleware
