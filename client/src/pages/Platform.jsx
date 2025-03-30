@@ -14,7 +14,8 @@ const Platform = () => {
     setAuth({ ...auth, [e.target.name]: e.target.value });
   };
 
-  // Pre-authentication handler
+  // Pre-authentication handler 
+  // 
   const handleAuthSubmit = (e) => {
     e.preventDefault();
 
