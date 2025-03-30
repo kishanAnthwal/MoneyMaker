@@ -9,7 +9,7 @@ const Batting = () => {
   const [latestMatches, setLatestMatches] = useState([]);
  
 
-  const KEY = `c3b13733-6f73-43c6-bb93-c2cf6c3ae2bd`; // Testing API
+  const KEY = `8331d88b-6e0a-44aa-b420-2c14c1c00710`; // Testing API
   const API = `https://api.cricapi.com/v1/cricScore?apikey=${KEY}`;
 
   const getData = async () => {
