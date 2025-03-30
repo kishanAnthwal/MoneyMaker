@@ -10,13 +10,7 @@ const app = express();
 app.use(express.json());
 
 
-app.use(cors(
-   {
-       origin:["https://www.moneymakerx24.com"],
-       methods:["POST","GET"],
-       credentials:true
-   }
-));
+app.use(cors());
 
 // Error handling middleware
 app.use((err, req, res, next) => {
