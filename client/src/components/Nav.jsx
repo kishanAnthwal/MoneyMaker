@@ -82,7 +82,12 @@ const Nav = () => {
           <Link to="/payment">Payment</Link>
         </li>
       </ul>
-
+      {/* Show "money" div only on /cricketbetting route */}
+      {location.pathname === "/batting" && (
+        <div className="money">
+          <p>12 <span>₹</span> </p>
+        </div>
+      )}
       {/* Hamburger Menu */}
       <div className="hamburger" onClick={toggleHamburger}>
         {hamburger ? <TiTimes /> : <TiThMenu />}
