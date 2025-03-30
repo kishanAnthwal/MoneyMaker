@@ -77,6 +77,9 @@ const Platform = () => {
             />
             <input type="submit" value="Authenticate" />
           </form>
+          <p>
+            <Link to="/login">I have an account</Link>
+          </p>
         </div>
       ) : (
         // ✅ Registration Form (Only shown after authentication)
