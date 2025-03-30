@@ -12,11 +12,11 @@
   ],
   "routes": [
     {
-      "src": "/api/(.*)",  // Send API requests to backend
+      "src": "/api/(.*)",  
       "dest": "/server.js"
     },
     {
-      "src": "/(.*)",  // Redirect everything else to React frontend
+      "src": "/(.*)",  
       "dest": "/client/build/index.html"
     }
   ]
