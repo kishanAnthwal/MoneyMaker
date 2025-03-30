@@ -106,6 +106,7 @@ const Platform = () => {
               onChange={handleChange}
               required
             />
+            
             <input type="submit" value="Register" />
           </form>
           <p>
