@@ -6,55 +6,56 @@
       "use": "@vercel/node"
     },
     {
-      "src": "client/build/*",
-      "use": "@vercel/static"
+      "src": "client/build/(.*)",
+      "dest": "client/build/$1"
     }
   ],
   "routes": [
     {
-      "src": "/api/(.*)",  
+      "src": "/api/(.*)",
       "dest": "/server.js"
     },
     {
-      "src": "/(.*)",  
+      "src": "/(.*)",
       "dest": "/client/build/index.html"
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/about",
+      "destination": "/"
     },
     {
-        "src":"/about",
-        "dest":"/"
-      },
-      {
-        "src":"/blog",
-        "dest":"/"
-      },
-      {
-        "src":"/contact",
-        "dest":"/"
-      },
-      {
-       "src":"/cricketbetting",
-        "dest":"/"
-      },
-      {
-        "src":"/platform",
-        "dest":"/"
-      },
-      {
-        "src": "/articles/:id",
-        "dest":"/"
-      },
-      {
-        "src":"/batting",
-        "dest":"/"
-      },
-      {
-        "src":"/login",
-       "dest":"/"
-      },
-      {
-        "src":"/payment",
-        "dest":"/"
-      }
+      "source": "/blog",
+      "destination": "/"
+    },
+    {
+      "source": "/contact",
+      "destination": "/"
+    },
+    {
+      "source": "/cricketbetting",
+      "destination": "/"
+    },
+    {
+      "source": "/platform",
+      "destination": "/"
+    },
+    {
+      "source": "/articles/:id",
+      "destination": "/"
+    },
+    {
+      "source": "/batting",
+      "destination": "/"
+    },
+    {
+      "source": "/login",
+      "destination": "/"
+    },
+    {
+      "source": "/payment",
+      "destination": "/"
+    }
   ]
 }
-
