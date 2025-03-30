@@ -19,7 +19,7 @@ const Hero = () => {
         <div className="hero_btn_container">
         
           <ul>
-            <li><Link to="https://wa.me/+917009229689?Hello" target="_blank">Contact Us @ 7009229689</Link></li>
+        
             <li><Link to="https://wa.me/+917009229689?Hello" target="_blenk">WhatsApp Us @ 7009229689</Link> </li>
           </ul>
         </div>
