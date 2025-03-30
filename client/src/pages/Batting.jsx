@@ -16,19 +16,30 @@ const Batting = () => {
     try {
       const res = await fetch(API);
       const result = await res.json();
-      console.log(result);
-
-      if (result && result.data) {
-        const liveMatch = result.data.find(
-          (match) => match.ms === "Live" || match.status?.includes("Live")
-        );
-        setMatch(liveMatch || result.data[0]); 
-
-        const sortedMatches = result.data
-          .filter((m) => m.status !== "Match not started")
-          .slice(0, 6);
-        setLatestMatches(sortedMatches);
+      console.log("API Response:", result); // Debugging
+  
+      if (!result || !result.data) {
+        console.error("Invalid API response:", result);
+        return;
       }
+  
+      // Find the live match (modify conditions if necessary)
+      const liveMatch = result.data.find(
+        (match) => match.ms?.toLowerCase() === "live" || match.status?.includes("Live")
+      );
+  
+      if (!liveMatch) {
+        console.warn("No live match found!");
+      }
+  
+      setMatch(liveMatch || result.data[0]); // Set first match if no live match
+  
+      // Get latest matches (excluding "Match not started")
+      const sortedMatches = result.data
+        .filter((m) => m.status && !m.status.includes("Match not started"))
+        .slice(0, 6);
+  
+      setLatestMatches(sortedMatches);
     } catch (err) {
       console.error("Error fetching data:", err);
     }
