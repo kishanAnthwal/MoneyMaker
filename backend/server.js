@@ -15,8 +15,7 @@ app.use(cors(
         origin:[""],
         methods:["POST","GET"],
         credentials:true
-    }
-));
+    }));
 
 // Error handling middleware
 app.use((err, req, res, next) => {
