@@ -1,46 +1,24 @@
 {
   "version": 2,
   "builds": [
-    { "src": "server.js", "use": "@vercel/node" }
+    {
+      "src": "server.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "client/build/(.*)",
+      "dest": "client/build/$1"
+    }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "/server.js" }
-       {
-        "src":"/about",
-       "dest": "/" 
-      },
-      {
-        "src":"/blog",
-         "dest": "/"
-      },
-      {
-        "src":"/contact",
-         "dest": "/"
-      },
-      {
-       "src":"/cricketbetting",
-         "dest": "/"
-      },
-      {
-        "src":"/platform",
-         "dest": "/"
-      },
-      {
-        "src":"/articles/:id",
-         "dest": "/"
-      },
-      {
-        "src":"/batting",
-        "dest": "/"
-      },
-      {
-        "src":"/login",
-         "dest": "/"
-      },
-      {
-        "src":"/payment",
-        "dest": "/"
-      }
+    {
+      "src": "/api/(.*)",
+      "dest": "/server.js"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/client/build/index.html",
+      "status": 200
+    }
   ]
 }
-
