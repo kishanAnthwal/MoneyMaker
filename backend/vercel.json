@@ -5,6 +5,42 @@
   ],
   "routes": [
     { "src": "/(.*)", "dest": "/server.js" }
+       {
+        "src":"/about",
+       "dest": "/" 
+      },
+      {
+        "src":"/blog",
+         "dest": "/"
+      },
+      {
+        "src":"/contact",
+         "dest": "/"
+      },
+      {
+       "src":"/cricketbetting",
+         "dest": "/"
+      },
+      {
+        "src":"/platform",
+         "dest": "/"
+      },
+      {
+        "src":"/articles/:id",
+         "dest": "/"
+      },
+      {
+        "src":"/batting",
+        "dest": "/"
+      },
+      {
+        "src":"/login",
+         "dest": "/"
+      },
+      {
+        "src":"/payment",
+        "dest": "/"
+      }
   ]
 }
 
