@@ -12,7 +12,7 @@ app.use(express.json());
 
 app.use(cors(
     {
-        origin:["https://www.moneymakerx24.com/"],
+        origin:[""],
         methods:["POST","GET"],
         credentials:true
     }
